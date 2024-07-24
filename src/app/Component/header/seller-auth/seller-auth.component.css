@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+p{
+	color:rgb(193, 5, 5);
+	font-size: 12px;
+	margin: 1px 0 0;
+	box-shadow: #777;
+	
+}
+.sing-up-cont {
+	font-family: 'Open Sans', sans-serif;
+	
+	margin: 0;
+	height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container {
+	/* background-color: #fff; */
+    background:var(--color-2bagy);
+	border-radius: 5px;
+	box-shadow: 0px 0px 10pX var(--color-brown);
+	overflow: hidden;
+	width: 40%;
+height: fit-content;    margin-bottom: 10px;
+    margin-top: 50px;
+
+   
+}
+
+.header {
+	border-bottom: 1px solid #2b102b;
+	/* background-color: #f7f7f7; */
+    background: transparent;
+	padding: 20px 40px;
+    color:#fff;
+	
+}
+
+.header h2 {
+	margin: 0;
+	color:var(--color-brown);
+
+}
+
+.form {
+	padding: 30px 20px;	
+}
+
+.form-control {
+	padding-bottom: 10px;
+	position: relative;
+	background-color:transparent; 
+	border: none;
+	padding: 0;
+}
+
+.form-control label {
+	display: inline-block;
+    color:var(--color-brown);
+	margin: 10px 0px 0px 0px;
+
+}
+
+.form-control input {
+	border:none;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 6px 10px;
+	width: 100%;
+
+}
+
+
+
+
+.form-control i {
+	
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+
+.form button {
+	background-color: var(--color-brown);
+	border: 2px solid var(--color-brown);
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 5px 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+	.container{
+		width: 70%;
+		height: fit-content;
+		margin-top:70px;
+	}
+	.form-control input{
+		margin: 0;
+	}
+	.form-control {
+		margin: 0;
+	}
+	.form{
+		padding: 5px 10px;
+	}
+}
+@media(min-width:480px) and (max-width:900px) {
+	.container{
+		width: 60%}
+}
+
+
+small{
+	color: #000;
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>> */
+.login-cont {
+  padding: 0;
+  margin: 0;
+
+  background-color: #e4bcf4;
+  font-family: "Open Sans", sans-serif;
+}
+.vid-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.bgvid.back {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+.inner {
+  position: absolute;
+}
+.inner-container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: calc(50vh - 200px);
+  left: calc(50vw - 200px);
+  overflow: hidden;
+}
+.bgvid.inner {
+  top: calc(-50vh + 200px);
+  left: calc(-50vw + 200px);
+  filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+  -webkit-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+}
+.box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.13);
+  padding: 30px 0px;
+}
+.box h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 30px;
+}
+.box input {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  color: black;
+  border: 0;
+}
+.box input:focus,
+.box input:active,
+.box button:focus,
+.box button:active {
+  outline: none;
+}
+.box button {
+  background: #8e44ad;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  width: 330px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+}
+.box button:active {
+  background: #530143;
+}
+.box p {
+  font-size: 14px;
+  text-align: center;
+}
+.box p span {
+  cursor: pointer;
+  color: #666;
+}
+.header p{
+	color:#fff;
+	font-size: 18px;
+	letter-spacing: -1px;
+    text-shadow:0 1px 4px var(--color-brown);
+
+}
+.auth-toggle-link
+{
+	display: block;
+	margin: 10px;
+	cursor: pointer;
+	color: #fff;
+    text-shadow:0 1px 4px var(--color-brown);
+	letter-spacing:-1px;
+	text-decoration: none;
+}
+.auth-toggle-link span{
+	color:var(--color-brown) ;
+    text-shadow:none
+	
+}
+
+  

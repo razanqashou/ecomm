@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+:root{
+--color-blue: rgb(6, 6, 123);
+--color-gray:rgb(49, 49, 50);
+--color-brown: rgb(31, 17, 1);
+--color-bagy: beige;
+--color-2bagy: rgb(229, 228, 226);
+
+--color-secondary: rgb(211, 211, 243);
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-2bagy);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
+  }
+
+
+  
+

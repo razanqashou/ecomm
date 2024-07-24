@@ -1,0 +1,24 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgb(244, 244, 244);
+    z-index: -1px;
+    margin-top: 40px;
+   ;
+}
+.footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul li a{
+    color: var(--color-brown);
+    text-decoration: none;
+}

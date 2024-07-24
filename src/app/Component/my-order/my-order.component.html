@@ -1,0 +1,86 @@
+<div class="my-orders">
+    <h1>My Orders</h1>
+    <div class="contanier"> 
+    <div class="row row-head">
+        <div class="col-sm-2">
+            <span>Orders</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Order Id</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Price</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Status</span>
+        </div>
+        <div class="col-sm-2">
+           <span>Cancel Order</span>
+        </div>
+    </div>
+    @for (item of  orderData ; track $index) {
+    <div class="row data">
+        
+        <div class="col-sm-2">
+            <img class="order-img" src="https://cdn-icons-png.flaticon.com/512/4088/4088793.png">
+        </div>
+        <div class="col-sm-2">
+            <span>#{{item.id}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{item.totalPrice}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>In Progress</span>
+        </div>
+        <div class="col-sm-2">
+            <button (click)="cancelOrder(item.id)">Cancel Order</button>
+        </div>
+  
+
+</div>
+    }
+</div>
+</div>
+
+
+<div class="row con">
+    
+<div class="col-sm-10 details">
+    <h1>My Orders</h1>
+    @for (item of  orderData ; track $index) {
+        <ul >
+            <div class="de">
+            <li>
+                <img [ariaKeyShortcuts]="" alt="" src="https://cdn-icons-png.flaticon.com/512/4088/4088793.png">
+            </li>
+
+          
+           
+            <li>
+                <span>Order Id: #{{item.id}}</span>
+            <li>
+                <span> Price :{{item.totalPrice}}</span>
+            </li>
+            <li>
+                <span> Status :In Progress</span>
+            </li>
+            
+       
+          
+       
+        <li >
+            <button (click)="cancelOrder(item.id)" >Cancel Order</button>
+         </li>
+        </div> 
+        </ul>}
+
+            
+       
+          
+      
+
+    
+        
+    </div>
+    </div>

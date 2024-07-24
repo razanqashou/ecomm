@@ -1,0 +1,269 @@
+
+
+.product-header-image{
+  object-fit:contain;
+  width: 100%;
+  height: 300px;
+}
+.product-item{
+   
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+}
+.carousel-caption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.carousel-caption h3{
+  text-transform: capitalize;
+  width: fit-content;
+ 
+}
+.carousel-caption p{
+  width: fit-content;
+}
+.product-item img{
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+.temp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  color: #011226;
+}
+.content span{
+  margin-right: 5px;
+  font-weight: bold;
+  color: var(--color-brown);
+  text-transform: capitalize;
+}
+.ntn-conanier{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.ntn-conanier a{
+  width: 90%;
+  margin: 0 auto;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  color: var(--color-2bagy);
+  text-align: center;
+  margin-bottom: -20px;
+  border-radius: 6px;
+  background-color: rgba(38, 32, 16, 0.5)
+
+ }
+
+.product-item .product-details {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
+.product-item .name-head{
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-item h6{
+  text-align: center;
+}
+.product-item .product-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.con{
+ margin-top: 40px;
+ overflow: hidden;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top: 10%;
+ /* flex: 1 1 50px ; */
+ margin-bottom: 5px;
+  gap: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+ 
+}
+.picsum-img-wrapper{
+  width: 100%;
+ 
+}
+.container .box{
+      
+  width:45%;
+  height: 450px;
+background-color: rgb(237, 237, 236);
+box-shadow: 0px 0px 5px #ccc;
+display: flex;
+align-items:center;
+justify-content: start;
+border-radius: .5rem;
+overflow: hidden;
+flex-wrap: wrap;
+}
+
+.container .box .im{
+
+  width: 100%;
+ text-align: center;
+ padding-right: 5px;
+}
+.btn{
+	border-radius: 4px;
+	color: var(--color-brown);
+	display: block;
+  display: inline;
+	font-family: inherit;
+	font-size: 12px;
+	padding: 0px;
+	margin-top: 5px;
+	width: 30%;;
+}
+.ntn-conanier a{
+  background-color: var(--color-brown);
+  color: var(--color-2bagy);
+  padding: 5px 0;
+}
+ .container .box .im img{
+  object-fit: fill;
+  height: 150px;
+  width: 150px;
+  padding: 10px; 
+}
+.container .box .content{
+  padding-left: 10px;
+  padding-right: 10px;
+ 
+}
+
+ .container .box .content p{
+  font-size: 14px;
+  color: var(--color-gray);
+  padding: 1px 0;
+  text-transform: capitalize;
+
+}
+
+
+
+
+
+
+  @media(max-width:500px) {
+    .container{
+      flex-wrap: wrap;
+    }
+
+    .container .box .im img{
+      height: 170px;
+      width: 60%;
+      margin: 0 auto;
+    }
+    .ntn-conanier a{
+    margin: 5px auto;
+    }
+.content span{
+  font-size: 18px;
+}
+.container .box .content p{
+  font-size: 18px;
+ 
+}
+  .ntn-conanier {
+    padding: 0 5px;
+    margin-top: 5px;
+  }
+  .ntn-conanier a{
+    font-size: 13px;
+    padding: 5px 0;
+  }
+  .container .box {
+        
+    width: calc(73.33% - 1rem);
+    height: 500px;
+    padding: 5px 0px;
+    
+      
+    }
+    
+      }
+
+      @media(min-width: 500px) and (max-width: 769px){
+        .container{
+     
+          flex-wrap: wrap;
+        }
+        container .box .im img{
+          height: 200px;
+          width: 80%;
+          margin: 0 auto;
+        }
+        .container[_ngcontent-ng-c2779212142] .box[_ngcontent-ng-c2779212142] {
+          width: calc(55% - 3rem);
+      }
+      .ntn-conanier {
+        padding: 0 5px;
+        margin-top: 5px;
+      }
+      .ntn-conanier a{
+        font-size: 10px;
+        padding: 5px 0;
+      }
+       
+      }
+      @media(min-width:769px) and ( max-width:1025px) {
+
+        .container .box .im img{
+          height: 200px;
+          width: 80%;
+          margin: 0 auto;
+        }
+        .btn{
+          width: 30%;
+          height: 60%;
+        }
+        .container {
+          flex-wrap: wrap;
+          gap: 1.5rem;
+        }
+        
+        .container .box {
+        
+        width: calc(33.33% - 1rem);
+      height: fit-content;
+          
+        }
+        
+      }
+    
+      
+      @media(min-width:1025px) and ( max-width:2025px) {
+        .container {
+          flex-wrap: wrap;
+          gap: 2rem;
+        }
+        .container .box {
+        
+        width: calc(33.33% - 5rem);
+        height: fit-content;
+            
+          }
+      }

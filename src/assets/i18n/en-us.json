@@ -1,0 +1,21 @@
+{
+    "Login": {
+      "email": "Email",
+      "password": "Password",
+      "login": "Login",
+      "Dont have an account?": "Don't have an account?",
+      "Click to Sign Up": "Click to Sign Up",
+      "enter your email": "Enter your email",
+      "enter your password": "Enter your password",
+       "username": "username",
+       "user login": "user Login"
+
+    },
+    "sign up":{
+      "already have account?": "Already have account?",
+      "Click to login": " Click to login",
+      "user sign up":"user sign up",
+      "sign up":"sign up"
+
+    }
+  }

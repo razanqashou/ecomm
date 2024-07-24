@@ -1,0 +1,59 @@
+<div class="checkout">
+    <h1>Checkout</h1>
+    <p style="color: green; text-align: center; font-size: 24px;" class="message-p">{{orderMsg}}</p>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Add shipping address</h3>
+        <p class="message-p"></p>
+        <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)" >
+          <input
+            type="text"
+            class="form-input"
+            name="email"
+            placeholder="Enter User Email"
+            ngModel
+            #email="ngModel"
+            (keyup)="keyUps()"
+            required
+            email
+          />
+          @if (email.invalid && keyup ){
+            <p><span>*please enter your email</span></p>} 
+          <input
+            type="text"
+            class="form-input"
+            name="address"
+            placeholder="Enter User Address"
+            ngModel
+            #adderss="ngModel"
+            (keyup)="keyUps()"
+            type="adderss"
+            required
+          />
+          @if (adderss.invalid && keyup ){
+            
+            <p><span>*please enter your Address</span></p>} 
+          <input
+           
+            class="form-input"
+            name="contact"
+            placeholder="Enter contact number"
+            ngModel
+            #number="ngModel"
+            (keyup)="keyUps()"
+            pattern="^07\d{8}$"
+            minlength="10"
+            required
+            type="tel"/>
+          @if (number.invalid && keyup && number.touched ){
+            <p><span>*please enter your contact number</span></p>} 
+          <button   class="form-button">Order Now</button>
+        </form>
+      </div>
+      <div class="col-sm-4">
+          <h5>Total Amount:{{totalPrice}}</h5>
+          <h5>Payment Method : Pay on delivery</h5>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,40 @@
+<mat-card class="product-list__table container">
+  <mat-card-header>
+    <h1 class="product-list__title">product list</h1>
+  </mat-card-header>
+
+  <mat-card-content>
+    <table datatable [dtOptions]="dtoption" [dtTrigger]="dttriger" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th role="columnheader"><h1>Image</h1></th>
+
+          <th role="columnheader"><h1>Name</h1></th>
+          <th role="columnheader"><h1>Price</h1></th>
+          <th role="columnheader"><h1>Color</h1></th>
+          <th role="columnheader"><h1>Category</h1></th>
+          <th role="columnheader"><h1>Description</h1></th>
+          <th role="columnheader"><h1>Action</h1></th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        @for (item of productList; track $index) {
+        <tr role="row">
+          <td role="cell"><img src="{{ item.image }}" /></td>
+
+          <td role="cell">{{ item.name }}</td>
+          <td role="cell">{{ item.price }}</td>
+          <td role="cell">{{ item.color }}</td>
+          <td role="cell">{{ item.category }}</td>
+          <td role="cell">{{ item.description }}</td>
+          <td role="cell">
+            <fa-icon (click)="delete(item.id)" [icon]="icon"></fa-icon>
+            <fa-icon routerLink="/seller-update-product/{{item.id}}" [icon]="EditIcon"></fa-icon>
+          </td>
+        </tr>
+
+        }
+      </tbody>
+    </table>
+  </mat-card-content>
+</mat-card>

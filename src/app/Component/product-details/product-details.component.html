@@ -1,0 +1,57 @@
+
+<main>
+@if(productData){
+
+  
+  <div class="container">
+    <section class="product-details">
+      <div class="product-image">
+        <img
+        src="{{productData.image}}"
+          alt="Product Image"
+        />
+      </div>
+      <div class="con">
+        <div class="product-info">
+          <h2>{{productData.name}}</h2>
+          <p class="price"><span>Price:</span>{{productData.price}}</p>
+          <div> <span>Color :</span><h3 [style.backgroundColor]="productData.color" class="product-color"></h3></div>
+          <p class="description">
+            <span>Description:</span>
+            {{productData.description}}
+          </p>
+        </div>
+        <div class="quantity-group">
+          <button
+            (click)="handleQuantity('decrement')"
+            class="quantity-button minus"
+          >
+            -
+          </button>
+          <input
+            
+            min="0"
+            [(ngModel)]="productQuantity"
+            class="quantity-input"
+          />
+          <button
+            (click)="handleQuantity('increment')"
+            class="quantity-button plus"
+          >
+            +
+          </button>
+        </div>
+       
+    <button  routerLink="/cart-page"    class="form-button buy">Buy now</button>
+    <div class="btn-contanier">
+      <button  class="form-button Add" (click)="  addProduct() " >Add to Cart</button>
+
+  <button class="form-button Remove" (click)="removeToCart(productData.id)">Remove to Cart</button>
+</div>
+      </div>
+    </section>
+  </div>
+
+
+}
+</main>

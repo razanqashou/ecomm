@@ -1,0 +1,54 @@
+<ngb-carousel class="con" *ngIf="popularProducts">
+  
+  <ng-template class="temp" *ngFor="let item of popularProducts" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <a  routerLink="/details/{{item.id}}"> <img class="product-header-image" src="{{item.image}}" alt="Random first slide">
+   </a>
+      </div>
+    <div class="carousel-caption">
+      <h3>{{item.name}}</h3>
+      <p>{{item.description}}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="container">
+  <div class="box" *ngFor="let item of trendyProducts" >
+    @if (item.image) {
+    <div class="im">
+      <img src="{{item.image}}"alt="">
+    </div>}
+      <div class="content">
+        @if (item.name) {
+          <p><span>Product name :</span>{{item.name}}</p>
+        }@else {
+          <p class="price"><span>Product name:</span>- </p>
+
+        }
+        @if (item.color) {
+          <p><span>Product Color:</span>{{item.color}}</p>
+        }@else {
+          <p class="price"><span>Color :</span>- </p>
+
+        }
+        @if (item.description) {
+          <p><span>Product Description :</span>{{item.description}}</p>
+        }@else {
+          <p><span>Product Description :</span>-</p>
+  
+        }
+        @if (item.price) {
+          <p class="price"><span>Price :</span>{{item.price}}$ </p>
+        }@else {
+          <p class="price"><span>Price :</span>- </p>
+
+        }
+      </div>
+          <div class="ntn-conanier">
+          <a  routerLink="/details/{{item.id}}" class="btn">View details</a>
+          
+        </div>
+     
+  </div>
+
+    </div>

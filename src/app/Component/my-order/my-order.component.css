@@ -1,0 +1,140 @@
+.my-orders{
+    margin-bottom: 100px;
+    
+}
+.my-orders h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.my-orders .order-img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+.data{
+    font-size: 15px;
+}
+.my-orders .row{
+  margin: 0;
+   
+    border-bottom:1px solid #464536;
+    align-items: center;
+    justify-content: center;
+    width: 100%   ;
+    padding: 10px;
+
+}
+.row-head span{
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--color-brown)
+}
+.my-orders[_ngcontent-ng-c3022725739] .row[_ngcontent-ng-c3022725739] {
+margin: 0;
+}
+.contanier{
+box-shadow: 0px 0px 5px #464536;
+width: 100%;
+border-radius: 5px;
+
+
+}
+button{
+    background-color: var(--color-brown);
+    color: var(--color-2bagy);
+    border: none;
+    border-radius: 5px;
+   
+    padding: 4px 7px ;
+    font-size: 14px;
+}
+.my-orders{
+   width: 90%;
+   margin: 60px auto;
+   padding: 20px;
+   border-radius: 5px;
+   height: 100vh;
+
+
+}
+.con{
+    display: none;
+    min-height: 100vh;
+}
+@media (max-width:700px) {
+ .my-orders{
+    display: none;
+ }
+    .details ul{
+        flex-direction:column ;
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+        
+
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px #ccc;
+    flex-wrap: nowrap;
+    
+    width: 100%;
+
+
+
+
+    } 
+     
+    img{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+    .de{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 20px;
+      width: 100%;
+    
+    }
+    .details ul .de  li{
+        margin-top: 3px;
+        margin-bottom: 3px;
+
+    }
+    
+    .details{
+        border-right:none ;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: start;
+        width: 70%;
+       
+     }
+     
+.con{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    
+}
+     .details button {
+       border: none;
+        color: var(--color-2bagy);
+        background-color: var(--color-brown);
+        margin-top: 10px;
+       width: 100%;
+   padding: 4px 0 ;
+   font-size: 14px;
+     } 
+    }

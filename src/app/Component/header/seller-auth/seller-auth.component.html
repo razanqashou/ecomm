@@ -1,0 +1,61 @@
+<div class="sing-up-cont">
+  
+
+  <div class="container">
+    <div class="header">
+      <h2>{{ "Login.login" | translate }}</h2>
+      <p>{{ authError }}</p>
+    </div>
+    <form
+      id="form"
+      class="form"
+      #sellerlogin="ngForm"
+      (ngSubmit)="login(sellerlogin.value)"
+    >
+      <div class="form-control">
+        <label for="username">{{ "Login.email" | translate }}</label>
+
+        <input
+          type="email"
+          placeholder="enter your email"
+          id="email"
+          [(ngModel)]="newSingUp.email"
+          name="email"
+          required
+          email
+          #email="ngModel"
+          (keyup)="keyUp()"
+        />
+
+        @if (email.invalid && keyup ){
+        <p><span>*{{ "Login.enter your email" | translate }}</span></p>
+        }
+      </div>
+      <div class="form-control">
+        <label for="password">{{ "Login.password" | translate }}</label>
+        <input
+          type="password"
+          placeholder=" enter your Password"
+          id="password"
+          ngModel="newSingUp.password"
+          name="password"
+          required
+          [(ngModel)]="newSingUp.password"
+          minlength="6"
+          autocomplete="off"
+          #password="ngModel"
+          (keyup)="keyUp()"
+        />
+        @if (password.invalid && keyup ){
+        <p><span>*{{ "Login.enter your password" | translate }}</span></p>
+        }
+      </div>
+
+      <button type="submit">{{ "Login.login" | translate }}</button>
+      <a class="auth-toggle-link" (click)="openSignUp()"
+        >{{ "Login.Dont have an account?" | translate }}
+        <span> {{ "Login.Click to Sign Up" | translate }}</span></a
+      >
+    </form>
+  </div>
+</div>

@@ -1,0 +1,423 @@
+{
+  "seller": [
+    {
+      "id": "32a3",
+      "name": "saif",
+      "email": "saif777@gmail.com",
+      "password": "saif2002"
+    },
+    {
+      "id": "56ec",
+      "name": "jana",
+      "email": "jana@gmail.com",
+      "password": "janaq"
+    },
+    {
+      "id": "1",
+      "name": "ahmad",
+      "email": "nbnbshou@gmail.com",
+      "passwprd": "2002"
+    },
+    {
+      "id": "d082",
+      "name": "yazzed",
+      "email": "yazzeg@gmail.com",
+      "password": "2003"
+    }
+  ],
+  "product": [
+    {
+      "name": " black blazer",
+      "price": "40",
+      "category": "black jacket",
+      "color": "Black",
+      "description": "good materail",
+      "image": "https://www.pngarts.com/files/1/Ladies-Jacket-Transparent-Background-PNG.png",
+      "id": "2b47"
+    },
+    {
+      "name": "Barbie bag",
+      "price": "10",
+      "category": "pink bag",
+      "color": "pink",
+      "description": "good quality",
+      "image": "https://th.bing.com/th/id/R.53237eb41e188a6f936374251bb3ad45?rik=pgGeHR0oPEVr5g&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fpurse-transparent-background%2fpurse-transparent-background-10.png&ehk=FULykqx0QWxiUyEMQGkpDeLCBIDsWD1sKDbO34pgJKs%3d&risl=&pid=ImgRaw&r=0",
+      "id": "b86d"
+    },
+    {
+      "name": "red velvet bag",
+      "price": "30",
+      "category": "red bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.c87d93c60e3f457b76bc80851089297b?rik=Ck%2b%2bntAyEyCwfA&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2%2fBag-PNG-Picture.png&ehk=OMxFHkbFt4ct2aF5LBgLQAkGk5rahxwDQUzcg0135tk%3d&risl=&pid=ImgRaw&r=0",
+      "id": "5962"
+    },
+    {
+      "name": "Cityscape Sling",
+      "price": "20",
+      "category": "black bag",
+      "color": "black",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.97ac5fe11178f44ec3190b46379dc9f7?rik=6YqOQbPHSZKdow&pid=ImgRaw&r=0",
+      "id": "4b49"
+    },
+    {
+      "name": "Chanel Handbag Pink Leather",
+      "price": "15",
+      "category": "pink bag",
+      "color": "pink",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.4f506edf783291d99a197d130df35778?rik=JnNEEA5ybTuo4A&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fpurse-transparent-background%2fpurse-transparent-background-6.png&ehk=l5D4jvmWGZGSACCIUTdtVMtwmcSHb9LrFOnLA1RTBus%3d&risl=1&pid=ImgRaw&r=0",
+      "id": "42ef"
+    },
+    {
+      "id": "5e17",
+      "name": "Ladies Vanity Bag ",
+      "price": "25",
+      "category": "pink bag",
+      "color": "pink",
+      "description": "high quality",
+      "image": "https://png.pngtree.com/png-clipart/20231111/original/pngtree-ladies-vanity-bag-blush-pink-png-image_13534732.png"
+    },
+    {
+      "id": "142e",
+      "name": "two shoulder pink bag",
+      "price": "30",
+      "category": "pink bag",
+      "color": "pink",
+      "description": "high quality",
+      "image": "https://www.alyxstudio.com/cdn/shop/products/AAWHB0005LE08_PNK0012_S23_1_1024x.png?v=1680788630"
+    },
+    {
+      "id": "b31d",
+      "name": "Louis Vuitton brown bag",
+      "price": "500",
+      "category": "brown bag",
+      "color": "brown",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.3fd089da680291b40b711d4a61a997e4?rik=rCC0gyZ76J1zhQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fpurse-transparent-background%2fpurse-transparent-background-3.png&ehk=aKmsWG8Mzy%2f1eunSAfR0HUoIccLRERhops%2bHWkGpzew%3d&risl=1&pid=ImgRaw&r=0"
+    },
+    {
+      "name": " vintage brown leather bag",
+      "price": "25",
+      "category": "brown bag",
+      "color": "brown",
+      "description": "high quality",
+      "image": "https://www.pngall.com/wp-content/uploads/4/Brown-Leather-Bag-180x180.png",
+      "id": "ad0e"
+    },
+    {
+      "name": "Brown Genuine Leather bag",
+      "price": "30",
+      "category": "brown bag",
+      "color": "brown",
+      "description": "high quality",
+      "image": "https://www.pngall.com/wp-content/uploads/4/Brown-Leather-Bag-PNG.png",
+      "id": "4d65"
+    },
+    {
+      "name": "Christian Dior Lady red Bag",
+      "price": "100",
+      "category": "red bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://www.pngmart.com/files/15/Red-Ladies-Bag-PNG.png",
+      "id": "dfe3"
+    },
+    {
+      "name": " dark red Bag",
+      "price": "20",
+      "category": "red bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://pngimg.com/uploads/women_bag/women_bag_PNG6421.png",
+      "id": "a486"
+    },
+    {
+      "id": "d463",
+      "name": " Chanel Red Bag ",
+      "price": "20",
+      "category": "red bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://freepngimg.com/download/chanel/60944-handbag-leather-chanel-red-bag-free-transparent-image-hq.png"
+    },
+    {
+      "name": "The Midnight Muse",
+      "price": "20",
+      "category": "Black jacket",
+      "color": "black",
+      "description": "high quality",
+      "image": "https://static.vecteezy.com/system/resources/previews/024/509/626/original/black-bag-isolated-on-transparent-background-created-with-generative-ai-png.png",
+      "id": "2098"
+    },
+    {
+      "name": "Hazely handbag  ",
+      "price": "40",
+      "category": "bag",
+      "color": "brown",
+      "description": "high quality",
+      "image": "https://www.pngall.com/wp-content/uploads/8/Womens-Handbag-PNG-Image.png",
+      "id": "8426"
+    },
+    {
+      "name": "Barbie bag",
+      "price": "10",
+      "category": "bag",
+      "color": "pink",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.53237eb41e188a6f936374251bb3ad45?rik=pgGeHR0oPEVr5g&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fpurse-transparent-background%2fpurse-transparent-background-10.png&ehk=FULykqx0QWxiUyEMQGkpDeLCBIDsWD1sKDbO34pgJKs%3d&risl=&pid=ImgRaw&r=0",
+      "id": "a707"
+    },
+    {
+      "name": "red velvet bag",
+      "price": "20",
+      "category": "bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.c87d93c60e3f457b76bc80851089297b?rik=Ck%2b%2bntAyEyCwfA&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2%2fBag-PNG-Picture.png&ehk=OMxFHkbFt4ct2aF5LBgLQAkGk5rahxwDQUzcg0135tk%3d&risl=&pid=ImgRaw&r=0",
+      "id": "ea1d"
+    },
+    {
+      "name": "Cityscape Sling",
+      "price": "20",
+      "category": "bag",
+      "color": "black",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.97ac5fe11178f44ec3190b46379dc9f7?rik=6YqOQbPHSZKdow&pid=ImgRaw&r=0",
+      "id": "628c"
+    },
+    {
+      "id": 1,
+      "name": "jacket",
+      "price": "200",
+      "category": "jacket",
+      "color": "bink",
+      "description": "",
+      "image": "https://th.bing.com/th/id/OIP.zzRg-FXvx_dc16SKT6lUXAHaHa?w=208&h=208&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+    },
+    {
+      "name": "Hazely handbag",
+      "price": "40",
+      "category": "bag",
+      "color": "brown",
+      "description": "high quality",
+      "image": "https://www.pngall.com/wp-content/uploads/8/Womens-Handbag-PNG-Image.png",
+      "id": "9f28"
+    },
+    {
+      "name": "Chanel Handbag Pink Leather",
+      "price": "15",
+      "category": "bag",
+      "color": "pink",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.4f506edf783291d99a197d130df35778?rik=JnNEEA5ybTuo4A&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fpurse-transparent-background%2fpurse-transparent-background-6.png&ehk=l5D4jvmWGZGSACCIUTdtVMtwmcSHb9LrFOnLA1RTBus%3d&risl=1&pid=ImgRaw&r=0",
+      "id": "b898"
+    },
+    {
+      "name": "Ladies Vanity Bag",
+      "price": "25",
+      "category": "bag",
+      "color": "pink",
+      "description": "high quality",
+      "image": "https://png.pngtree.com/png-clipart/20231111/original/pngtree-ladies-vanity-bag-blush-pink-png-image_13534732.png",
+      "id": "a665"
+    },
+    {
+      "name": "two shoulder pink bag",
+      "price": "",
+      "category": "bag",
+      "color": "pink ",
+      "description": "high quality",
+      "image": "https://www.alyxstudio.com/cdn/shop/products/AAWHB0005LE08_PNK0012_S23_1_1024x.png?v=1680788630",
+      "id": "915d"
+    },
+    {
+      "id": "f19a",
+      "name": "Louis Vuitton brown bag",
+      "price": "500",
+      "category": "bag",
+      "color": "brown",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.3fd089da680291b40b711d4a61a997e4?rik=rCC0gyZ76J1zhQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fpurse-transparent-background%2fpurse-transparent-background-3.png&ehk=aKmsWG8Mzy%2f1eunSAfR0HUoIccLRERhops%2bHWkGpzew%3d&risl=1&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "b26a",
+      "name": "vintage brown leather bag",
+      "price": "25",
+      "category": "bag",
+      "color": "brown",
+      "description": "high quality",
+      "image": "https://www.pngall.com/wp-content/uploads/4/Brown-Leather-Bag-180x180.png"
+    },
+    {
+      "id": "d0f2",
+      "name": "Brown Genuine Leather bag",
+      "price": "30",
+      "category": "bag",
+      "color": "brown",
+      "description": "high quality",
+      "image": "https://www.pngall.com/wp-content/uploads/4/Brown-Leather-Bag-PNG.png"
+    },
+    {
+      "name": "Christian Dior Lady red Bag",
+      "price": "100",
+      "category": "bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://www.pngmart.com/files/15/Red-Ladies-Bag-PNG.png",
+      "id": "c69d"
+    },
+    {
+      "name": "dark red Bag",
+      "price": "20",
+      "category": "bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://pngimg.com/uploads/women_bag/women_bag_PNG6421.png",
+      "id": "0252"
+    },
+    {
+      "name": "Chanel red bag",
+      "price": "20",
+      "category": "bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://freepngimg.com/download/chanel/60944-handbag-leather-chanel-red-bag-free-transparent-image-hq.png",
+      "id": "6c59"
+    },
+    {
+      "name": "The Midnight Muse",
+      "price": "20",
+      "category": "bag",
+      "color": "black",
+      "description": "high quality",
+      "image": "https://static.vecteezy.com/system/resources/previews/024/509/626/original/black-bag-isolated-on-transparent-background-created-with-generative-ai-png.png",
+      "id": "a4dc"
+    },
+    {
+      "id": "ee6e",
+      "name": "white blazer",
+      "price": "25",
+      "category": "white jacket",
+      "color": "white",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.13c905669d1288e09720c531102ba3f4?rik=XBAGsSegZbinIQ&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f15%2fWhite-Blazer-Transparent-PNG.png&ehk=EPaRUhH8TNA9ZxYV%2bzCWSCVZ6HQuQVULevXnx94FvhI%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "name": "white blazer",
+      "price": "25",
+      "category": " jacket",
+      "color": "white",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.13c905669d1288e09720c531102ba3f4?rik=XBAGsSegZbinIQ&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f15%2fWhite-Blazer-Transparent-PNG.png&ehk=EPaRUhH8TNA9ZxYV%2bzCWSCVZ6HQuQVULevXnx94FvhI%3d&risl=&pid=ImgRaw&r=0",
+      "id": "2ec8"
+    },
+    {
+      "id": "2796",
+      "name": "black leather jacket",
+      "price": "25",
+      "category": "black jacket",
+      "color": "blac",
+      "description": "high quality",
+      "image": "https://pngimg.com/d/leather_jacket_PNG45.png"
+    },
+    {
+      "id": "87b2",
+      "name": "black leather jacket",
+      "price": "25",
+      "category": " jacket",
+      "color": "blac",
+      "description": "high quality",
+      "image": "https://pngimg.com/d/leather_jacket_PNG45.png"
+    },
+    {
+      "name": "waterproof black  jacket",
+      "price": "15",
+      "category": " jacket",
+      "color": "black",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.e1779f7c3be169b11f8ec3900d50be63?rik=vh5j99n0VUgz%2bQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ffree-png-jacket-jacket-png-clipart-1500.png&ehk=4nSjHClouA%2bS5pN4Ok5wd432OA7qmG4iuQWTChiZg7s%3d&risl=&pid=ImgRaw&r=0",
+      "id": "fcd5"
+    },
+    {
+      "name": "beige coat  ",
+      "price": "35",
+      "category": " jacket",
+      "color": "cappuccino",
+      "description": "high quality",
+      "image": "https://www.pngarts.com/files/3/Short-Coat-For-Women-Transparent-Images.png",
+      "id": "a846"
+    },
+    {
+      "name": "yellow coat  ",
+      "price": "35",
+      "category": " jacket",
+      "color": "yellow",
+      "description": "high quality",
+      "image": "https://www.pngarts.com/files/1/Ladies-Jacket-PNG-Picture.png",
+      "id": "f886"
+    }
+  ],
+  "user": [
+    {
+      "id": "4925",
+      "Username": "razan",
+      "email": "razanqashou@gmail.com",
+      "password": "2002"
+    },
+    {
+      "id": "541c",
+      "Username": "roz",
+      "email": "razanqashou7@gmail.com",
+      "password": "2005"
+    },
+    {
+      "id": "55a5",
+      "name": "razan",
+      "email": "razanqashou777@gmail.com",
+      "password": "20032002"
+    }
+  ],
+  "cart": [
+    {
+      "id": "fd6a",
+      "name": "red velvet bag",
+      "price": "30",
+      "category": "red bag",
+      "color": "red",
+      "description": "high quality",
+      "image": "https://th.bing.com/th/id/R.c87d93c60e3f457b76bc80851089297b?rik=Ck%2b%2bntAyEyCwfA&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2%2fBag-PNG-Picture.png&ehk=OMxFHkbFt4ct2aF5LBgLQAkGk5rahxwDQUzcg0135tk%3d&risl=&pid=ImgRaw&r=0",
+      "quantity": 1,
+      "userId": "55a5",
+      "productId": "5962"
+    }
+  ],
+  "orders": [
+    {
+      "id": "7dba",
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 500,
+      "userId": "541c"
+    },
+    {
+      "id": "f762",
+      "email": "",
+      "address": "",
+      "contact": 2,
+      "totalPrice": 110,
+      "userId": "55a5"
+    },
+    {
+      "id": "ac25",
+      "email": "ra@g",
+      "address": "jhcb",
+      "contact": "0797334543",
+      "totalPrice": 110,
+      "userId": "55a5"
+    }
+  ]
+}

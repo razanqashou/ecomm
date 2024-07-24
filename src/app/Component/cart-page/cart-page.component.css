@@ -1,0 +1,216 @@
+.cart-page{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    height: 100vh;
+}
+.cart-page h1{
+    text-align: center;
+    color: var(--color-brown);
+    margin-bottom: 30px;
+}
+
+.details img{
+    height: 150px;
+    width: 120px;
+    margin-left: 20px;
+}
+.details{
+   width: 70%;
+   margin-top: 10px;
+   
+   
+}
+.details ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px #ccc;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+
+}
+
+button{
+    color:rgb(67 59 49);
+    border-radius: 5px;
+    border:1px solid rgb(67 59 49) ;
+}
+button:hover{
+    background-color: rgb(67 59 49);
+    color: var(--color-2bagy);
+}
+.details ul .de li span{
+    font-weight: bold;
+    color: var(--color-brown);
+
+}
+.details ul .de li{
+    height: fit-content;
+    margin: 0px  10px 0px 10px;
+    font-size: 14px;
+    color: #646358;
+}
+.summary h3{
+    text-align: center;
+    color: var(--color-brown);
+}
+.summary{
+    margin-top: 50px;
+    flex: 0.7 1 auto;
+    width: 70%;
+
+    
+}
+.summary ul {
+    list-style-type: none;
+    padding: 15px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-left: 30px;
+border-radius: 6px;
+box-shadow: 0px 0px 5px #464536;
+
+}
+.summary ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.summary button{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.de{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 40px;
+    align-items: start;
+    text-align: center;
+    width: 100%;
+}
+.con{
+    justify-content: center;
+    flex: 1 1 ;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 440px){
+    .details ul{
+        flex-direction:column ;
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+
+    } 
+     
+    img{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+    .de{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 20px;
+      width: 100%;
+      border-bottom: 1px solid #464536;
+    
+    }
+    .details ul .de  li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    
+    .details{
+        border-right:none ;
+        border-bottom:1px solid var(--color-brown);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        width: 60%;
+       
+     }
+     .details button {
+       border: none;
+        color: var(--color-2bagy);
+        background-color: var(--color-brown);
+        margin-top: 10px;
+        padding: 2px 20px;
+       width: 100%;
+
+        
+     }
+     .summary button{
+        background-color: var(--color-brown);
+        color: var(--color-2bagy);
+       
+     }
+     .con{
+        justify-content: center;
+        align-items: center;
+     }
+     .summary{
+        width: 80%;
+        flex: 1 1 auto;
+     }
+}
+
+@media (min-width:441px) and (max-width:770px){
+    .row{
+        flex-wrap: nowrap;
+    }
+    .details{
+        width: 70%;
+        margin-left: 20px;
+
+
+    }
+    .details ul{
+        flex-direction: column;
+      
+       
+    }
+    .details button {
+        border: none;
+         color: var(--color-2bagy);
+         background-color: var(--color-brown);
+         margin-top: 10px;
+         padding: 2px 40px;
+        width: 100%;
+ 
+         
+      }
+     .summary button{
+        background-color: var(--color-brown);
+        color: var(--color-2bagy);
+     }
+    .details img{
+        width: 200px;
+        height: 200px;
+     }
+    .de{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-left: 20px;
+    }
+    .details ul .de  li{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .summary{
+        width: 70%;
+       
+    }
+   
+}

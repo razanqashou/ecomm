@@ -1,0 +1,237 @@
+.nav {
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: var(--color-brown);
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding for smaller screens */
+  justify-content: space-between;
+}
+
+
+
+button{
+  border-radius: 7px;
+}
+.nav h1 {
+  font-size: 40px; /* Adjust font size for smaller screens */
+  margin: 5px 3% 1% 3%;
+}
+
+.nav h1 a {
+  text-decoration: none;
+  color: rgb(237, 237, 236);
+}
+
+.nav-search {
+  display: none;
+  position: relative;
+}
+select {
+  /* Reset default browser styles */
+  appearance: none;
+  border: 1px solid var(--color-bagy);;
+  border-radius: 4px;
+  padding: 2px 12px;
+  font-size: 16px;
+  /* Add a bit of spacing fo
+  r the arrow */
+ 
+  color: var(--color-brown);;
+  background-color: var(--color-2bagy);
+}
+
+
+.lang-icon{
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Style the arrow inside the select element */
+select::-ms-expand-downarrow { /* For Internet Explorer pre-Edge */
+  appearance: none;
+  margin-right: 5px;
+  /* Add some space for the arrow */
+}
+
+select::-ms-value { /* For Internet Explorer Edge and later */
+  appearance: none;
+}
+
+select::after {
+  content: "\25BC"; /* Down arrow character (adjust as needed) */
+  font-size: 12px;
+  color: var(--color-brown);
+  /* Position the arrow to the right */
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  
+}
+
+.nav .nav-search {
+  flex: 1;
+  display: flex;
+  margin: 5px 3% 0 5%;
+}
+
+.nav .nav-search input,
+.nav-search input {
+  flex: 1;
+  color: var(--color-brown);
+  border: 1px solid var(--color-bagy);
+  height: 38px;
+  background-color: rgb(237, 237, 236);
+  border-right: none;
+  padding-left: 6px;
+  padding-right: 40px; 
+  box-sizing: border-box; 
+
+}
+
+.nav .nav-search button,
+.nav-search button {
+  color: var(--color-brown);
+  height: 38.1px;
+ 
+  background-color: rgb(237, 237, 236);
+ overflow: hidden;
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    padding: 5px 10px; 
+    border: none; 
+    cursor: pointer;
+  
+} 
+
+.nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 5px;
+
+}
+.nav li{
+  margin: 0px 5px;
+}
+.nav a{
+  text-decoration: none;
+color: rgb(237, 237, 236);
+}
+.sid ul {
+  
+  padding: 4px;
+  align-items: center;
+  list-style-type: none;
+
+}
+
+.sid ul li {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.sid ul li a {
+  margin: 2px 5px  5px;
+  text-decoration: none;
+color: rgb(237, 237, 236);
+  font-size: 19px;
+ 
+  font-weight: bold;
+}
+
+
+.btn-login  a{
+  text-decoration: none;
+color: rgb(237, 237, 236);
+  
+}
+ .nav .suggested-search {
+  position: absolute; 
+  top: 100%; 
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+ }
+ 
+ .nav .suggested-search li {
+  padding:5px;
+  width: 90%;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.nav .suggested-search li:hover{
+  background-color:rgb(250, 250, 240);
+}
+.nav .suggested-search li a{
+  cursor: pointer;
+  color: var(--color-brown);
+}
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .nav h1 {
+    font-size: 28px;
+    margin-right: 60px; /* Adjust font size for smaller screens */
+  }
+  .nav ul{
+    flex-wrap: wrap;
+  }
+  .nav ul li{
+    margin-top: 9px;
+  }
+  .cont {
+    background-color: #f8edf8;
+    padding: 6px;
+  }
+  /* .nav-search {
+    flex: 1;
+    display: flex;
+    margin: 5px 3% 0 5%;
+  }
+  
+   */
+  /* .nav .nav-search {
+    /* display: none; */
+
+ 
+
+  
+}
+@media (min-width: 900px)  {
+  .suggested-search{
+    left: 240px;
+    width: 60%; 
+    top: 90px;
+  z-index: 999; }
+}
+
+
+.home{
+  display: flex;
+  position: relative;;
+
+
+}
+ 
+fa-icon{
+color: rgb(237, 237, 236);
+
+  font-weight: 80px;
+
+}
+.nav .saller a{
+  margin: 0 7px;
+}

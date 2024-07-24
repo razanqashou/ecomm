@@ -1,0 +1,71 @@
+
+
+<div class="add-product">
+    
+    <form #addProduct="ngForm" class="cont" (ngSubmit)="submit(addProduct.value)">
+     
+      <div class="form-control">
+       
+        @if (isUpdated) {
+            <div class="message">
+              <p>{{updateMes}}</p>
+            
+            </div>
+          }
+          <div class="header-contanier">
+            <h1>Update Product</h1>
+          </div>
+        <input
+          type="text"
+          placeholder="Enter Product Name"
+          name="name"
+          required
+          ngModel="{{productData?.name}}"
+        />
+        <input
+          type="text"
+          placeholder="Enter Product Price"
+          name="price"
+          required
+          ngModel="{{productData?.price}}"
+        />
+        <input
+          type="text"
+          placeholder="Enter Product Category"
+          name="category"
+          required
+          ngModel="{{productData?.category}}"
+        />
+  
+        <input
+          type="text"
+          placeholder="Enter Product Color"
+          name="color"
+          required
+          ngModel="{{productData?.color}}"
+        />
+  
+        
+        <textarea
+          placeholder="Enter Product Description"
+          name="description"
+          type="text"
+          required
+          ngModel="{{productData?.description}}"
+        ></textarea>
+  
+        <input
+          type="text"
+          placeholder="Enter Product  Image URL"
+          name="image"
+          required
+          ngModel="{{productData?.image}}"
+        />
+  
+        <button cl type="submit">Update Product</button>
+  
+      </div>
+  
+    </form>
+  </div>
+  

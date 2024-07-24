@@ -1,0 +1,11 @@
+{
+    "Login": {
+    "email": "Adresse e-mail", 
+    "password": "Mot de passe",
+    "login": "Connexion",
+    "Dont have an account?": "Vous n'avez pas de compte ?", 
+    "Click to Sign Up": "Cliquez pour vous inscrire", 
+    "enter your email": "Entrez votre adresse e-mail",
+    "enter your password": "Entrez votre mot de passe" 
+    }
+    }

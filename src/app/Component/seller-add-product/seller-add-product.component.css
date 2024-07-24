@@ -1,0 +1,96 @@
+
+.form-control {
+	padding-bottom: 20px;
+	padding-top: 20px;
+    width: 100%;
+    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+    display: flex;
+    justify-content: center;
+	background-color:  var(--color-2bagy);
+	border:none;
+	box-shadow: 0px 0px 10pX var(--color-brown);
+
+
+}
+.header-contanier{
+	width: 100%;
+	border-bottom: 0.3px solid var(--color-brown);
+	text-align: center;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+    color: var(--color-brown);
+}
+.message{
+	background-color: var(--color-2bagy);
+	
+	padding: 0px 10px;
+	text-align: center;
+	width: 50%;
+    box-shadow: 5px 10px 5px    rgba(61, 2, 49, 0.3);
+   transition:0.3s ease-in-out; 
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+p{color:var(--color-brown);}
+
+.form-control input ,textarea {
+	border: 1px solid var(--color-brown);
+	border-radius: 2px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+    margin: 10pX;
+    width: 60%;
+    padding: 10px;
+    
+}
+h1{
+	color: var(--color-brown);
+	font-size: 30px;
+	font-weight: 300px;
+	margin-top: 10px;
+}
+button {
+	background-color: var(--color-brown);
+	border: 2px solid var(--color-brown);
+	border-radius: 4px;
+	color: var(--color-2bagy);
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+    width: 30%;
+}
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+.cont{
+   
+	font-family: 'Open Sans', sans-serif;
+	width: 40%;
+	
+  
+}
+
+.add-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	height: 100vh;
+	
+}
+@media(max-width:480px){
+	.cont{
+		width: 80%;
+	}	
+}

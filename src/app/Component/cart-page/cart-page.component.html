@@ -1,0 +1,49 @@
+
+<div class="cart-page">
+    <h1>
+        Cart Page
+    </h1>
+    <div class="row con">
+        <div class="col-sm-4 summary ">
+            <!-- <h3>Summary</h3> -->
+            <ul>
+                <li> <span>Amount:</span><span>{{priceSummary.price}}</span></li>
+                <li> <span>Tax:</span><span>{{priceSummary.tax}}</span></li>
+                <li> <span>Delivery:</span><span>{{priceSummary.delivery}}</span></li>
+                <li> <span>Discount:</span><span>{{priceSummary.discount}}</span></li>
+                <li> <span><h4>Total</h4></span> <span><h4>{{priceSummary.total}}</h4></span></li>
+                <li>                <button routerLink="/checkout"  >Checkout</button>
+                </li>
+            </ul>
+            </div>
+    <div class="col-sm-10 details">
+    @for (item of cartData; track $index) {
+        <ul >
+           
+            <li>
+                <img src={{item.image}} alt="">
+            </li>
+
+            <div class="de">
+            <li>
+                <span> Product : </span>{{item.name}}
+            </li>
+            <li>
+                <span> Price :</span>{{item.price}}
+            <li>
+                <span> Quantity :</span>{{item.quantity}}
+            </li>
+       
+          
+        </div>
+        <li >
+            <button (click)="removeToCart(item.id)">Remove</button>
+         </li> 
+        </ul>
+
+    }
+        
+    </div>
+    
+    </div>
+    </div>

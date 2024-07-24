@@ -1,0 +1,25 @@
+{
+    "Login":{
+ "email": "البريد الإلكتروني", 
+  "password": "كلمة المرور", 
+  "login": "تسجيل الدخول", 
+  "Dont have an account?":" ليس  لديك حساب؟" ,
+   "Click to Sign Up": "اضغط للتسجيل", 
+  "enter your email": "أدخل بريدك الإلكتروني",
+  "enter your password": "أدخل كلمة مرورك" ,
+  "enter your username": "أدخل اسم المستخدم" ,
+
+  "username":"اسم المستخدم",
+  "user login": "تسجيل دخول المستخدم"
+ 
+    }
+    ,
+    "sign up":{
+      "already have account?": "لديك حساب بالفعل؟",
+      "Click to login": "انقر لتسجيل الدخول",
+      "user sign up":"تسجيل المستخدم",
+      "sign up":"تسجيل"
+
+
+    }
+}

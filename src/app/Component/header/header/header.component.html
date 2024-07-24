@@ -1,0 +1,237 @@
+<nav class="nav" >
+  <h1><a routerLink="">E-Comm</a> </h1>
+
+  <div class="nav-search" *ngIf="menuType !== 'seller'"> <input
+    #searchInput
+    (keyup)="searchProduct($event)"
+    type="text"
+    placeholder="Search Product"
+    (click)="isSubmit"
+  />
+  <button (click)="submitSearch(searchInput.value)">Search</button>
+@if(searchResult && !isSubmit){
+  <ul class="suggested-search" >
+    @for (item of searchResult ; track $index) {
+    <li (mousedown)="redirectToDetails(item.id)" >
+      {{ item.name }}
+    </li>
+  }
+  </ul>
+}
+</div>
+
+
+ <div>
+  @switch (menuType) {
+
+  @case ('default') {
+  <ul >
+    <li><a  routerLink="/seller">Seller</a></li>
+    <li ><a routerLink="/user">User</a></li>
+    <li><a routerLink="">Home</a></li>
+   
+
+    <li routerLink="/cart-page">    
+      <a >({{cartItem}})</a>
+  
+      <fa-icon  [icon]="cart"></fa-icon>
+    </li> 
+  
+      <li >
+      @if (!isLang) {
+      <fa-icon
+        class="lang-icon"
+        (click)="islangClicked()"
+        [icon]="language"
+      ></fa-icon>
+      }@else {
+      <select (change)="ChangeLang($event)">
+        <option [selected]="lang === 'arabic'" value="arabic">Arabic</option>
+        <option [selected]="lang === 'en-us'" value="en-us">English</option>
+        <option [selected]="lang === 'french'" value="french">
+          frech
+        </option></select>
+      >}
+    </li>
+  </ul>
+   
+  }
+  @case ('user') {
+  <ul >
+    <li><a routerLink="">Home</a></li>
+      <li><a routerLink="my-order" >My Orders</a></li>
+    <li><a (click)="logoutuser()" >Logout</a></li>
+
+    <li>    
+      <a routerLink="/cart-page">({{cartItem}})</a>
+  
+      <fa-icon  [icon]="cart"></fa-icon>
+    </li>  
+    <!-- <ul style="list-style-type: none">
+      <li
+        style="
+          background-color: var(--color-bagy);
+          padding: 4px;
+          border-radius: 5px;
+          margin-left: 3px;
+          text-align: center;
+        "
+      >
+        <a style="color: black">{{ userName | titlecase }}</a>
+      </li>
+    </ul>   -->
+    
+    </ul>
+  }
+  @case ('seller'){
+  <ul  class="saller">
+    <li><a routerLink="seller-add-product">Add Product</a></li>
+    <li><a routerLink="seller-home">List</a></li>
+    <li><a (click)="logoutseller()">Logout</a></li>
+   
+    <ul style="list-style-type: none">
+      <li
+        style="
+          background-color: var(--color-bagy);
+          padding: 4px;
+          border-radius: 5px;
+          margin-left: 3px;
+          text-align: center;
+          padding: 0px 10px;
+        "
+      >
+        <a style="color: black">{{ sellerName | titlecase }}</a>
+      </li>
+    </ul>  </ul>}
+}
+ </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nav class="nav">
+  @if (!ismenuclick) {
+  <fa-icon (click)="menu()" [icon]="menuicon"></fa-icon>} @else {
+  <fa-icon (click)="closes()" [icon]="close"></fa-icon>
+  }
+  <h1><a routerLink="">E-Comm</a></h1>
+ 
+  @if (menuType==='default') {
+  <div class="nav-search">
+    <input
+    #searchInput
+      (keyup)="searchProduct($event)"
+      type="text"
+      placeholder="Search Prouduct">
+
+    
+    <button (click)="submitSearch(searchInput.value)">Search</button>
+
+  </div>
+  <ul>
+    @if(userlogin ){
+      <li class="btn-login"><a (click)="userloginn()" >Login/SignUp</a></li>
+
+    }@else {
+    <li><a (click)="logoutuser()">Logout</a></li>
+
+    }
+
+@if(!isSubmit){
+    <ul class="suggested-search" *ngIf="searchResult" >
+      <li *ngFor="let item of searchResult" (click)="isSubmit=true" class="name" >
+        <a   (mousedown)="submitSearch(item.category)">{{ item.name }}</a>
+      </li>
+    </ul>
+  }
+    <li>    
+      <a href="#">({{cartItem}})</a>
+  
+      <fa-icon  [icon]="cart"></fa-icon>
+    </li>
+    </ul>
+    <ul>
+      <li>
+      @if (!isLang) {
+      <fa-icon
+        class="lang-icon"
+        (click)="islangClicked()"
+        [icon]="language"
+      ></fa-icon>
+      }@else {
+      <select (change)="ChangeLang($event)">
+        <option [selected]="lang === 'arabic'" value="arabic">Arabic</option>
+        <option [selected]="lang === 'en-us'" value="en-us">English</option>
+        <option [selected]="lang === 'french'" value="french">
+          frech
+        </option></select
+      >}
+    </li>
+  </ul>
+  }@else{
+  <ul style="list-style-type: none">
+    <li
+      style="
+        background-color: var(--color-bagy);
+        padding: 4px;
+        border-radius: 5px;
+        margin-left: 3px;
+        text-align: center;
+      "
+    >
+      <a style="color: black">{{ sellerName | titlecase }}</a>
+    </li>
+  </ul>
+  }
+</nav>
+
+@if(ismenuclick){
+<div class="sid">
+  @switch (menuType) {
+     @case ('default') {
+  <ul>
+    <div class="home">
+      <fa-icon [icon]="shope"></fa-icon>
+
+      <li><a (click)="closes()" routerLink="/seller">Seller</a></li>
+    </div>
+
+    <div class="home">
+      <fa-icon [icon]="home"></fa-icon>
+
+      <li><a (click)="closes()" routerLink="/home">Home </a></li>
+    </div>
+  </ul>
+  } @case ('seller') {
+  <ul>
+    <div class="home">
+      <fa-icon [icon]="add"></fa-icon>
+      <li>
+        <a (click)="closes()" routerLink="/seller-add-product">Add Product</a>
+      </li>
+    </div>
+    <div class="home">
+      <fa-icon [icon]="tad"></fa-icon>
+      <li><a (click)="closes()" routerLink="/seller-home">List</a></li>
+    </div>
+    <div class="home">
+      <fa-icon [icon]="logouts"></fa-icon>
+      <li><a (click)="logoutseller()">Logout</a></li>
+    </div>
+  </ul>
+  } }
+</div>
+} -->

@@ -1,0 +1,130 @@
+<div class="sing-up-cont">
+  @if (!showLogin) {
+  <!-- <h2>Create Account</h2> -->
+
+  <div class="container">
+    <div class="header">
+      <h2>{{  "sign up.user sign up" | translate}}</h2>
+    </div>
+    <form id="form" class="form" #user="ngForm" (ngSubmit)="signUp(user.value)">
+      <div class="form-control">
+        <label for="username">{{ "Login.username" | translate }}</label>
+        <input
+          type="text"
+          placeholder="enter your username"
+          id="username"
+          name="Username"
+          required
+          [(ngModel)]="newSingUp.name"
+          #username="ngModel"
+          (keyup)="keyups()"
+        />
+        @if (username.invalid && keyup ) {
+        <P><span>{{ "Login.enter your username" | translate }}</span></P>
+        }
+      </div>
+      <div class="form-control">
+        <label for="email">{{ "Login.email" | translate }}</label>
+
+        <input
+          type="email"
+          placeholder="enter your email"
+          id="email"
+          name="email"
+          required
+          [(ngModel)]="newSingUp.email"
+          autocomplete="off"
+          #email="ngModel"
+          (keyup)="keyups()"
+          email
+        />
+        @if (email.invalid && keyup ){
+        <p><span>*{{ "Login.enter your email" | translate }}</span></p>
+        }
+      </div>
+      <div class="form-control">
+        <label for="password">{{ "Login.password" | translate }}</label>
+        <input
+          type="password"
+          placeholder=" enter your Password"
+          id="password"
+          name="password"
+          required
+          minlength="6"
+          [(ngModel)]="newSingUp.password"
+          autocomplete="current-password"
+          #password="ngModel"
+          (keyup)="keyups()"
+        />
+        @if (password.invalid && keyup) {
+        <p><span>*{{ "Login.enter your password" | translate }}</span></p>
+        }
+      </div>
+
+      <button type="submit">{{ "sign up.sign up" }}</button>
+      <a class="auth-toggle-link" (click)="openLogin()">{{ "sign up.already have account?" | translate }} <span> {{ "sign up.Click to login" | translate }}</span></a
+      >
+    </form>
+  </div>
+  } @if (showLogin) {
+  <h2>{{ "Login.user login" | translate }}</h2>
+
+  <div class="container">
+    <div class="header">
+      <h2>User Login</h2>
+      <p>{{authError}}</p>
+    </div>
+    <form
+      id="form"
+      class="form"
+      #userlogin="ngForm"
+      (ngSubmit)="login(userlogin.value)"
+    >
+      <div class="form-control">
+        <label for="username">{{ "Login.email" | translate }}</label>
+
+        <input
+          type="email"
+          placeholder="enter your email"
+          id="email"
+          name="email"
+          required
+          [(ngModel)]="newlogin.email"
+          email
+          #email="ngModel"
+          (keyup)="keyups()"
+        />
+         @if (email.invalid && keyup ){
+        <p><span>*{{ "Login.enter your email" | translate }}</span></p>
+        }
+      </div>
+      <div class="form-control">
+        <label for="username">{{ "Login.password" | translate }}</label>
+        <input
+          type="password"
+          placeholder=" enter your Password"
+          id="password"
+          name="password"
+          [(ngModel)]="newSingUp.email"
+          autocomplete="current-password"
+          required
+          #password="ngModel"
+          (keyup)="keyups()"
+        />
+
+        @if (password.invalid && keyup) {
+        <p><span>*{{ "Login.enter your password" | translate }}</span></p>
+        }
+      </div>
+
+      <button [disabled]="userlogin.invalid" type="submit">{{'Login.login'|translate}}</button>
+      <a class="auth-toggle-link" (click)="openSignUp()"
+        >{{ "Login.Dont have an account?" | translate }}
+        <span> {{ "Login.Click to Sign Up" | translate }}</span></a
+      >
+      >
+    </form>
+  </div>
+
+  }
+</div>
